@@ -1,0 +1,150 @@
+.youtube{
+
+    display: flex;
+    justify-content: center;
+    background-color:#0C090A;
+    padding:4rem 2rem;
+
+    .container{
+      max-width: 1400px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      .head{
+        padding:1rem 2.5rem;
+        border-radius:25px 25px 40px 0px;
+        background-color:#2b1b17;
+        max-width: 280px;
+        margin-bottom:2rem;
+        
+        h2{
+           font-size: 2.5rem;
+           color: white;
+           font-weight: 400;
+        }
+      }
+
+      .box{
+        display: flex;
+        flex-direction: column;
+        margin-top:2rem;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+
+            .info{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                img{
+                    width:125px;
+                    height:125px;
+                    border-radius: 50%;
+                    border: .1rem solid white;
+                }
+                .main-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap:.5rem;
+                .title{
+                    h2{
+                        font-size: 2.5rem;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                    }
+                }
+                
+                .subs{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    span{
+                        font-size: 1.2rem;
+                        color:#c0c0c0;
+                    }
+                }
+
+               }
+               
+            }
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+             a{
+                padding: .8rem 1.2rem;
+                border: .1rem solid white;
+                background-color:transparent;
+                color: white;
+                cursor: pointer;
+                text-decoration: none; 
+                border-radius: .5rem;
+                font-size: 1.2rem;
+                letter-spacing: .5px;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    transition: .4s ease;
+                }
+               }
+            }
+
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .5rem;
+            padding:2rem 0rem;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+            .button{
+                display: flex;
+                align-items: center;
+                padding: 1rem 0;
+                a{
+                 background-color: transparent;
+                 border: .1rem solid white;
+                 padding:.8rem 1rem;
+                 color: white;
+                 font-size:1rem;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 letter-spacing: 1px;
+
+                 &:hover{
+                    background-color: white;
+                    color: black;
+                    transition: .4s ease;
+                 }
+                }
+            }
+        }
+      }
+    }
+}
+
+@media (max-width:1400px){
+    .youtube{
+        .container{
+            width: 1200px;
+
+           .item{
+             iframe{
+                width: 380px;
+                height:250px;
+             }
+           } 
+        }
+
+    }
+}

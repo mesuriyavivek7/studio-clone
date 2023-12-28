@@ -1,0 +1,54 @@
+.album{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0C090A;
+    color: white;
+
+    .container{
+        width: 1400px;
+        display:flex;
+        flex-direction: column;
+        padding:0rem 2rem;
+        position: relative;
+        margin-top:2rem;
+
+        .heading{
+            padding: 1rem 3rem;
+            border-radius:25px 25px 40px 0px;
+            background-color:#2B1B17;
+            max-width:400px;
+            position: absolute;
+            h2{
+              font-size:2rem;
+              
+              i{
+                font-weight:300;
+              }
+            }
+
+        }
+        .gallery{
+          margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1rem;
+            .item{
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              gap: 1rem;
+              border-radius: .5rem;
+
+              img{
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+              }
+            }
+        }
+        
+    }
+}

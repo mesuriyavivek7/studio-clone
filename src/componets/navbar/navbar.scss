@@ -1,0 +1,38 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #0C090A;
+    color: white;
+
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        width:1400px;
+        padding: 1rem 0;
+
+        img{
+          height: 65px;
+          width: 125px;
+          object-fit: cover;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+
+            .link{
+                font-weight: 200;
+                font-size: 1.2rem;
+                cursor: pointer;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

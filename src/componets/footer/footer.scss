@@ -1,0 +1,103 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color:#454545;
+
+    .container{
+       display: flex;
+       width: 1400px;
+       align-items: flex-start;
+       justify-content:space-between;
+       padding:2rem 0;
+       color: white;
+       gap: 2.5rem;
+
+       .info{
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+         padding: 2rem;
+
+         .user{
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                font-weight: 500;
+                font-size: 1.5rem;
+                letter-spacing: .5px;
+            }
+            p{
+               font-weight: 400;
+               font-size:1rem;
+               letter-spacing:.5px;
+            }
+         }
+
+         .social{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;     
+                
+                .item{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .icon{
+                        font-size:25px;
+                    }
+
+                    span{
+                            cursor: pointer;
+                            text-decoration: none;
+                            font-weight: 300;
+                            font-size: 1.2rem;
+                            color: white;
+                            text-decoration: underline;
+                    }
+                }
+
+         }
+
+         
+
+       }
+
+       .desc{
+         display: flex;
+         flex-direction: column;
+         gap: 3rem;
+         padding: 2rem;
+
+         p{
+            font-size: 1.2rem;
+            letter-spacing: .5px;
+            font-weight: 400;
+            word-spacing: .5px;
+            line-height: 1.4;
+         }
+         span{
+            text-align: center;
+             letter-spacing: .5;
+             font-size: 1rem;
+         }
+       }
+
+       .locat{
+           padding: 2rem;
+           display: flex;
+           flex-direction: column;
+           gap: .5rem;
+           h2{
+            font-size:1.4rem;
+           }
+           p{
+            font-size: 1rem;
+            word-spacing: .5;
+            line-height: 1.6;
+           }
+       }
+
+    }
+}
