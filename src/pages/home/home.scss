@@ -70,6 +70,8 @@
               }
        
     }
+
+
     .review-slider{
       background-color: #2B1B17;
       color: white;
@@ -92,6 +94,37 @@
     }
 }
 
-@media (max-width:1400px){
-   
+@media screen and (max-width:768px){
+  .home{
+    .features{
+      video{
+        max-width:720px;
+        height:320px;
+      }
+
+      .quotes{
+        top: 18%;
+        left: 15%;
+        right: 15%;
+        bottom: 15%;
+
+        h2{
+          font-size: 2rem;
+          line-height:1.2;
+        }
+
+        button{
+          padding: .6rem .8rem;
+          font-size: 1rem;
+        }
+      }
+
+      .overlap{
+        width: 720px;
+        height: 320px;
+      }
+
+
+    }
+  }
 }
