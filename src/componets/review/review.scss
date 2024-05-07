@@ -40,3 +40,37 @@
        }
     }
 }
+
+@media screen and (max-width:768px){
+     .Review{
+        position: relative;
+        padding: 0rem;
+
+        .left{
+
+           img{
+            height: 100%;
+            width: 100%;
+           }
+        }
+
+        .right{
+          margin:1rem;
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          padding: 1rem;
+          gap: 1rem;
+          bottom: 0;
+          border-radius:35px 2px 35px 2px;
+
+          .head{
+            font-size: 1.4rem;
+            line-height: 1.2;
+          }
+          .para{
+            font-size: 1rem;
+            display: none;
+          }
+        }
+     }
+}

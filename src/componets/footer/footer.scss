@@ -5,7 +5,6 @@
 
     .container{
        display: flex;
-       width: 1400px;
        align-items: flex-start;
        justify-content:space-between;
        padding:2rem 0;
@@ -99,5 +98,15 @@
            }
        }
 
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer{
+
+        .container{
+          flex-direction: column;
+          gap: 1rem;
+        }
     }
 }

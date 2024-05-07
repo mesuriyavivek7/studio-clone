@@ -27,63 +27,27 @@ export default function Insta() {
 
              <a href="https://www.instagram.com/onetime_click/" target='_blank'><InstagramIcon></InstagramIcon> <span>FOLLOW</span></a>
            </div>
+
            <div className='posts'>
             
-              <div className='item'>
-                <a href={insta[0].link} target='_blank'>
-                <div className='box'>
-                 <img src={insta[0].img}></img>
-                 <div className='icon'>
-                   <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
-                 </div>
-                </div>
-                </a>
-              
-               <a href={insta[1].link} target='_blank'>
-                <div className='box'>
-                 <img src={insta[1].img}></img>
-                 <div className='icon'>
-                   <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
-                 </div>
-                </div>
-              </a>
+              <div className='itemContainer'>
 
-              <a href={insta[2].link} target='_blank'>
-                <div className='box'>
-                 <img src={insta[2].img}></img>
-                 <div className='icon'>
-                   <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
-                 </div>
-                </div>
-              </a>
-              </div>
-              <div className='item'>
-                 <a href={insta[3].link} target='_blank'>
+
+              {
+                insta.map((item,i)=>(
+
+                <a key={i} href={item.link} target='_blank'>
                  <div className='box'>
-                 <img src={insta[3].img}></img>
-                 <div className='icon'>
-                   <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
-                 </div>
-                 </div>
-                </a>
-
-                <a href={insta[4].link} target='_blank'>
-                <div className='box'>
-                 <img src={insta[4].img}></img>
-                 <div className='icon'>
-                   <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
-                 </div>
-                </div>
-                </a>
-
-                 <a href={insta[5].link} target='_blank'>
-                  <div className='box'>
-                  <img src={insta[5].img}></img>
+                  <img src={item.img} alt=''></img>
                   <div className='icon'>
                     <RemoveRedEyeIcon className='eye'></RemoveRedEyeIcon>
                   </div>
-                  </div>
-                 </a>
+                 </div>
+                </a>
+                   
+                ))
+              }
+
               </div> 
            </div>
            <div className='button'>

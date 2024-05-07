@@ -2,7 +2,7 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
-    position: sticky;
+    position:sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -12,8 +12,8 @@
     padding: 1rem 0rem;
 
         img{
-          height: 65px;
-          width: 125px;
+          height: 70px;
+          width: 130px;
           object-fit: cover;
         }
         .menu{
@@ -56,10 +56,18 @@
 
   
         .bars{
-           padding: .4rem .6rem;
+           display: flex;
            background-color: white;
            border-radius: .5rem;
            color: black;
+           justify-content: center;
+           align-items: center;
+           padding: .5rem;
+           cursor: pointer;
+        }
+
+        .icons{
+            color: black;
         }
 
     }

@@ -18,7 +18,7 @@ export default function Home() {
             <video src={Home_BG} autoPlay loop muted></video>
             <div className='quotes'>
               <h2>Capture Your Memorable Moments</h2>
-              <Link><button>Book Now</button></Link>
+              <Link to='/contact'><button>Book Now</button></Link>
             </div>
             <div className='overlap'></div>
        </div>

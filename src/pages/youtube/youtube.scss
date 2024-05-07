@@ -6,7 +6,6 @@
     padding:4rem 2rem;
 
     .container{
-      max-width: 1400px;
       display: flex;
       flex-direction: column;
       color: white;
@@ -28,12 +27,13 @@
       .box{
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top:2rem;
+
         .top{
             display: flex;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-
+            padding: 1rem;
+            gap: 15rem;
             .info{
                 display: flex;
                 align-items: center;
@@ -96,37 +96,34 @@
 
         }
         .content{
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3,minmax(250px,1fr));
+            gap: .5rem;
+            padding:2rem 1rem;
+
+         
+     
+        }
+        .button{
             display: flex;
             align-items: center;
-            flex-direction: column;
-            gap: .5rem;
-            padding:2rem 0rem;
+            padding: 0;
+            a{
+             background-color: transparent;
+             border: .1rem solid white;
+             padding:.8rem 1rem;
+             color: white;
+             font-size:1rem;
+             text-decoration: none;
+             text-transform: uppercase;
+             letter-spacing: 1px;
 
-            .item{
-                display: flex;
-                align-items: center;
-                gap: .5rem;
-            }
-            .button{
-                display: flex;
-                align-items: center;
-                padding: 1rem 0;
-                a{
-                 background-color: transparent;
-                 border: .1rem solid white;
-                 padding:.8rem 1rem;
-                 color: white;
-                 font-size:1rem;
-                 text-decoration: none;
-                 text-transform: uppercase;
-                 letter-spacing: 1px;
-
-                 &:hover{
-                    background-color: white;
-                    color: black;
-                    transition: .4s ease;
-                 }
-                }
+             &:hover{
+                background-color: white;
+                color: black;
+                transition: .4s ease;
+             }
             }
         }
       }
@@ -135,15 +132,70 @@
 
 @media (max-width:1400px){
     .youtube{
+        padding: 2rem .5rem;
         .container{
-            width: 1200px;
+            align-items: center;
+            .head{
+                border-radius:25px 0px 25px 0px;
+                margin-bottom: 1rem;
+                padding:.8rem;
+                max-width: 250px;
+                h2{
+                    font-size: 2rem;
+                }
+            }
 
-           .item{
-             iframe{
-                width: 380px;
-                height:250px;
-             }
-           } 
+            .box{
+
+
+                .top{
+                    gap: 5.5rem;
+                    padding:1rem 0rem;
+
+                   .info{
+                     flex-direction: column;
+                     align-items: flex-start;
+                     gap: .5rem;
+                      img{
+                        width:60px;
+                        height:60px;
+                      }
+
+                      .main-text{
+                        .title{
+                            h2{
+                                font-size:1.2rem;
+                            }
+                        }
+                        .subs{
+                            display: none;
+                        }
+                      }
+                   }
+
+                   button{
+                     a{
+                        font-size: .8rem;
+                        padding: .8rem;
+                     }
+                   }
+                  
+                }
+
+
+                .content{
+                     grid-template-columns:repeat(1,minmax(200px,1fr));
+
+
+                     iframe{
+                        width: 320px;
+                        height: 250px;
+                     }
+                }
+
+            }
+
+          
         }
 
     }

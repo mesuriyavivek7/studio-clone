@@ -1,19 +1,34 @@
 .slide{
     display: flex;
     justify-content: center;
+    padding: 1rem;
 
+     .container{
+        width: 1400px;
+
+        .carousel-prev, .carousel-next{
+         width: 4rem;
+         height: 4rem;
+         background-color: lightgray;
+         border-radius: 50%;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+      }
+
+    }
+}
+
+@media screen and (max-width:768px){
     .container{
-       width: 1400px;
+        max-width:800px;
 
-       .carousel-prev, .carousel-next{
-        width: 4rem;
-        height: 4rem;
-        background-color: lightgray;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+
+        .carousel-prev, .carousel-next{
+            display: none;
+        }
     }
-    }
+
+    
 }

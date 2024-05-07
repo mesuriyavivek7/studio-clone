@@ -11,12 +11,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function NavSet() {
-  const [mobileMode,setmobileMode]=useState(false);
-  const [bars,setBars]=useState(false);
+  //code for mobile view
+  let mobileview=(window.innerWidth<=768)?true:false
+  const [mobile,setMobile]=useState(mobileview)
+  const [menuOpen,setMenuOpen]=useState(false)
+
+
+  const handleMobile=()=>{
+    if(window.innerWidth<=768){
+      setMobile(true)
+    }else{
+      setMobile(false)
+    }
+ }
   
   useEffect(()=>{
-    setmobileMode(window.innerWidth<768?true:false)
-  })
+    window.addEventListener("resize",handleMobile)
+    return ()=>{
+      window.removeEventListener("resize",handleMobile)
+    }
+  },[])
 
   return (
     <div className='navbar'>
@@ -27,27 +41,34 @@ export default function NavSet() {
              
  
             {
-              (mobileMode===true)&&
+              (mobile===true)&&
                 (
                  <div className='bars'>
                  {
-                  (bars===true)?
-                  (<CloseIcon className='icons' onClick={()=>setBars(!bars)}></CloseIcon>):
-                  (<MenuIcon className='icons' onClick={()=>setBars(!bars)}></MenuIcon>)
+                  (menuOpen===true)?
+                  (<CloseIcon className='icons' onClick={()=>setMenuOpen(!menuOpen)}></CloseIcon>):
+                  (<MenuIcon className='icons' onClick={()=>setMenuOpen(!menuOpen)}></MenuIcon>)
                  }
                 </div>
                )
             }
 
             {
-              (bars===true || mobileMode===false) && (
+              (mobile===false)?(
                 <div className='menu'>
                   <Link className='link' to='/about'>About</Link>
                   <Link className='link' to='/recentwork'>Recent Work</Link>
                   <Link className='link' to='/youtube'>YT Channel</Link>
                   <Link className='link' to='/contact'>Contact</Link>
                 </div>
-              )
+              ):((menuOpen===true)&&(
+                <div className='menu'>
+                  <Link className='link' to='/about'>About</Link>
+                  <Link className='link' to='/recentwork'>Recent Work</Link>
+                  <Link className='link' to='/youtube'>YT Channel</Link>
+                  <Link className='link' to='/contact'>Contact</Link>
+                </div>
+              ))
                
             }
             

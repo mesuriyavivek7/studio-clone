@@ -29,7 +29,7 @@
 
         }
         .gallery{
-          margin-top: 4rem;
+            margin-top: 4rem;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
@@ -51,4 +51,32 @@
         }
         
     }
+}
+
+@media screen and (max-width:768px){
+  
+  .album{
+    padding: 0rem;
+
+    .container{
+      padding: 0rem 1rem;
+      padding-bottom:2rem;
+
+      .heading{
+        top: 0;
+        h2{
+          font-size:1.3rem;
+        }
+      }
+
+      .gallery{
+        margin-top: 4.5rem;
+        gap: .5rem;
+        .item{
+          gap: .5rem;
+        }
+
+      }
+    }
+  }
 }

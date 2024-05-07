@@ -15,7 +15,7 @@ export default function YouTube() {
              <div className='box'>
                <div className='top'>
                  <div className='info'>
-                    <img src={Logo}></img>
+                    <img src={Logo} alt=''></img>
 
                   <div className='main-text'>
                     <div className='title'>
@@ -35,32 +35,33 @@ export default function YouTube() {
                  </div>
                </div>
                <div className='content'>
-                  <div className='item'>
+                  
                     <div className='first-item'>
-                       <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=RHDFK3J8Hrl3VkWG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div className='second-item'>
-                       <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy?autoplay=1&cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/hifKztA6AcU?si=bSzmDj4R1aqwWb-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div className='third-item'>
-                      <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/vKJMhIMvPrY?si=S9MgfHu9kPoaP7MH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                  </div>
-                  <div className='item'>
-                    <div className='first-item'>
-                       <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  
+                  
+                    {/* <div className='first-item'>
+                       <iframe width="420" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div className='second-item'>
-                       <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                       <iframe width="420" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div className='third-item'>
-                      <iframe width="450" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                  </div>
+                      <iframe width="420" height="300" src="https://www.youtube.com/embed/VI9u8Ha9NaY?si=KnVqOaG7nZuGzUvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div> */}
+                  
+
+               </div>
                   <div className='button'>
                     <a href='https://youtube.com/@onetimeclick1?si=mvlIJpe8kJmwyq4N' target='_blank'>View Channel</a>
                   </div>
-               </div>
 
              </div>
          </div>

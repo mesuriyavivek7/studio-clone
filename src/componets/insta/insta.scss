@@ -5,7 +5,7 @@
     justify-content: center;
     
     .container{
-      width: 1400px;
+      // width: 1400px;
       display: flex;
       flex-direction: column;
 
@@ -25,7 +25,7 @@
       .top{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 1.5rem 0rem;
         .info{
@@ -74,8 +74,9 @@
          flex-direction: column;
          gap: 1rem;
 
-         .item{
-           display: flex;
+         .itemContainer{
+           display: grid;
+           grid-template-columns: repeat(3,minmax(250px,1fr));
            align-items: center;
            gap:1rem;
            
@@ -147,4 +148,50 @@
 
 
     }
+}
+
+@media screen and (max-width:768px){
+
+  .insta{
+     .container{
+      width: 100%;
+
+      .myhead{
+         padding: .5rem;
+         text-align: left;
+
+         h2{
+          font-size:2.5rem;
+         }
+      }
+
+      .top{
+        justify-content: space-around;
+        .info{
+          gap: .5rem;
+          img{
+            width: 45px;
+            height: 45px;
+          }
+          span{
+            font-size: 1.2rem;
+          }
+        }
+        a{
+          padding: .8rem;
+
+          span{
+            font-size:1rem;
+          }
+        }
+       }
+     .posts{
+         .itemContainer{
+           grid-template-columns: repeat(1,minmax(200px,1fr));
+         }
+      }
+     
+  }
+  
+}
 }

@@ -21,6 +21,18 @@ import PIC14 from './images/album-1-pic14.jpg'
 import PIC15 from './images/album-1-pic15.jpg'
 import PIC16 from './images/album-1-pic16.jpg'
 
+
+//import data twinkle-maulic pic
+import TM1 from './images/albumc-1.jpg'
+import TM2 from './images/albumc-2.jpg'
+import TM3 from './images/albumc-3.jpg'
+import TM4 from './images/albumc-4.jpg'
+import TM5 from './images/albumc-5.jpg'
+import TM6 from './images/albumc-6.jpg'
+import TM7 from './images/albumc-7.jpg'
+import TM8 from './images/albumc-8.jpg'
+
+
 //export insta data
 import INSTA1 from './images/insta1.jpg'
 import INSTA2 from './images/insta2.jpg'
@@ -28,6 +40,8 @@ import INSTA3 from './images/insta3.webp.jpg'
 import INSTA4 from './images/insta4.webp.jpg'
 import INSTA5 from './images/insta5.webp.jpg'
 import INSTA6 from './images/insta6.webp.jpg'
+
+
 
 
 export const reviews=[
@@ -58,6 +72,59 @@ export const reviews=[
 
 //albums data
 
+
+export const albums={
+
+    album1:{
+        head:"Pinank & Isha",
+        desc:"Royal Wedding",
+       row1:[PIC2,PIC1,PIC3,PIC4,PIC5,PIC6],
+       row2:[PIC15,PIC8,PIC9,PIC7],
+       row3:[PIC12,PIC11,PIC13,PIC14,PIC10,PIC16]
+    }
+    ,
+    album2:{
+        head:"Sumant & Prexa",
+        desc:"Best Weddong",
+        row1:[PIC1,PIC2,PIC3,PIC4,PIC5],
+        row2:[PIC6,PIC7,PIC8,PIC9,PIC10],
+        row3:[PIC11,PIC12,PIC13,PIC14,PIC16]
+    }
+    ,
+    album3:{
+        head:"Nishant & Neha",
+        desc:"Best Weddong",
+        row1:[PIC1,PIC2,PIC3,PIC13,PIC5],
+        row2:[PIC7,PIC7,PIC8,PIC9,PIC10],
+        row3:[PIC11,PIC16,PIC13,PIC14,PIC14]
+    },
+    albumA:{
+        head:"Sumant & Prexa",
+        desc:"Best Weddong",
+        row1:[PIC1,PIC2,PIC3,PIC4,PIC5],
+        row2:[PIC6,PIC7,PIC8,PIC9,PIC10],
+        row3:[PIC11,PIC12,PIC13,PIC14,PIC16]
+    },
+    albumB:{
+        head:"Ronak & Khushi",
+        desc:"Best Weddong",
+        row1:[PIC11,PIC12,PIC13,PIC14,PIC16],
+        row2:[PIC6,PIC7,PIC8,PIC9,PIC10],
+        row3:[PIC1,PIC2,PIC3,PIC4,PIC5]
+    
+    },
+    albumC:{
+        head:"Twinkle & Maulik",
+        desc:"Romantic Weddong",
+        row1:[TM1,TM2],
+        row2:[TM4,TM5,TM3],
+        row3:[TM7,TM8,TM6]
+    
+    }
+
+
+
+}
 
 
 //export album1 

@@ -14,11 +14,6 @@ import YouTube from "./pages/youtube/YouTube";
 import Contact from "./pages/contact/Contact";
 //import albums
 import Album1 from "./pages/album/Album1";
-import Album2 from "./pages/album/Album2";
-import Album3 from "./pages/album/Album3";
-import AlbumA from "./pages/album/AlbumA";
-import AlbumB from "./pages/album/AlbumB";
-import AlbumC from "./pages/album/AlbumC";
 
 import RecentWork from "./pages/recentwork/RecentWork";
 
@@ -60,29 +55,9 @@ function App() {
           element:<Contact></Contact>
          },
          {
-          path:'/album1',
+          path:'/album1/:albumset',
           element:<Album1></Album1>
          },
-         {
-          path:'/album2',
-          element:<Album2></Album2>
-         },
-         {
-          path:'/album3',
-          element:<Album3></Album3>
-         },
-         {
-          path:'/album-A',
-          element:<AlbumA></AlbumA>
-         },
-         {
-          path:'/album-B',
-          element:<AlbumB></AlbumB>
-         },
-         {
-          path:'/album-c',
-          element:<AlbumC></AlbumC>
-         }
       ]
     },
    ])

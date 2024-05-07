@@ -4,7 +4,6 @@
     background-color:#0C090A;
 
     .container{
-        width: 1400px;
         display: flex;
         flex-direction: column;
         padding: 2rem 7rem;
@@ -60,4 +59,33 @@
             }
         }
     }
+}
+
+@media screen and (max-width:768px){
+    .about{
+        .container{
+          padding: 2rem 1rem;
+          align-items: center;
+
+          .head{
+            border-radius:25px 0 25px 0;
+            margin-bottom: 1rem;
+
+            h2{
+                font-size: 2rem;
+            }
+          }
+
+         .box{
+          flex-direction: column;
+
+          .left{
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+          }
+        }
+    }
+    }
+    
 }
